@@ -1,6 +1,5 @@
 # need sudo su
 apt update -y
-apt upgrade -y
 apt install -y vim
 rm .vimrc
 wget https://raw.githubusercontent.com/a20034294/vim/master/.vimrc > .vimrc
@@ -12,8 +11,8 @@ apt install -y mosh
 apt install -y gcc
 apt install -y g++
 apt install -y python3-pip
-pip3 install -y numpy
-pip3 install -y matplotlib
+pip3 install numpy
+pip3 install matplotlib
 apt install -y htop
 apt install -y zsh
 apt install -y powerline fonts-powerline
