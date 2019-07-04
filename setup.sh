@@ -1,6 +1,6 @@
 # need sudo su
-apt update
-apt upgrade
+apt update -y
+apt upgrade -y
 apt install -y vim
 wget https://raw.githubusercontent.com/a20034294/vim/master/.vimrc > .vimrc
 apt install -y git
