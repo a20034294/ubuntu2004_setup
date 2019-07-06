@@ -1,4 +1,5 @@
 # need sudo su
+sed -i 's/archive.ubuntu.com/free.nchc.org.tw/g' /etc/apt/sources.list
 apt update -y
 apt install -y vim
 rm .vimrc
