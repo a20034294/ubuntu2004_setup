@@ -1,9 +1,9 @@
 # need sudo su
 sed -i 's/archive.ubuntu.com/free.nchc.org.tw/g' /etc/apt/sources.list
-apt update -y
+apt update
 apt install -y vim
 rm .vimrc
-wget https://raw.githubusercontent.com/a20034294/vim/master/.vimrc > .vimrc
+wget https://raw.githubusercontent.com/a20034294/vim/master/.vimrc
 apt install -y curl
 apt install -y git
 apt install -y tmux
