@@ -20,5 +20,5 @@ DEBIAN_FRONTEND=noninteractive apt install -y zsh
 DEBIAN_FRONTEND=noninteractive apt install -y powerline
 DEBIAN_FRONTEND=noninteractive apt install -y fonts-powerline
 chsh -s /bin/zsh
-echo "alias ls=\"ls -al\" >> .zshrc
+echo "alias ls='ls -al'" >> .zshrc
 zsh
