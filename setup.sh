@@ -1,13 +1,13 @@
 # need sudo su
 sed -i 's/archive.ubuntu.com/free.nchc.org.tw/g' /etc/apt/sources.list
 apt update
+DEBIAN_FRONTEND=noninteractive apt install -y curl
+DEBIAN_FRONTEND=noninteractive apt install -y git
 DEBIAN_FRONTEND=noninteractive apt install -y vim
 git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
 rm .vimrc
 wget https://raw.githubusercontent.com/a20034294/vim/master/.vimrc
 vim +PlugInstall +qall > /dev/null
-DEBIAN_FRONTEND=noninteractive apt install -y curl
-DEBIAN_FRONTEND=noninteractive apt install -y git
 DEBIAN_FRONTEND=noninteractive apt install -y tmux
 rm .tmux.conf
 wget https://raw.githubusercontent.com/a20034294/tmux/master/.tmux.conf
