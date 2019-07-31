@@ -20,6 +20,5 @@ DEBIAN_FRONTEND=noninteractive apt install -y htop
 DEBIAN_FRONTEND=noninteractive apt install -y zsh
 DEBIAN_FRONTEND=noninteractive apt install -y powerline
 DEBIAN_FRONTEND=noninteractive apt install -y fonts-powerline
-chsh -s /bin/zsh
-echo "alias ls='ls -alFG'" >> .zshrc
-zsh
+echo "alias ls='ls -alF --graph=auto'" >> .zshrc
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
