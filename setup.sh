@@ -26,5 +26,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 echo "alias ls='ls -alF --color=always'" >> .zshrc
 sed -i 's/robbyrussell/agnoster/g' .zshrc
 chsh -s /bin/zsh
+export LC_ALL="en_US.UTF-8"
 zsh
 
