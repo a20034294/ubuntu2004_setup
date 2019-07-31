@@ -21,7 +21,7 @@ DEBIAN_FRONTEND=noninteractive apt install -y zsh
 DEBIAN_FRONTEND=noninteractive apt install -y powerline
 DEBIAN_FRONTEND=noninteractive apt install -y fonts-powerline
 DEBIAN_FRONTEND=noninteractive apt install -y locales
-locale-gen en_US.UTF-8
+locale-gen zh_TW.UTF-8
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
 echo "alias ls='ls -alF --color=always'" >> .zshrc
 sed -i 's/robbyrussell/agnoster/g' .zshrc
