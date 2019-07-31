@@ -29,5 +29,7 @@ sed -i 's/robbyrussell/agnoster/g' .zshrc
 sed -i 's/git/git mosh/g' .zshrc
 chsh -s /bin/zsh
 export LC_ALL="en_US.UTF-8"
+mkdir .ssh
+touch .ssh/authorized_keys
 zsh
 
