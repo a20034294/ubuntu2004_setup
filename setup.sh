@@ -1,4 +1,4 @@
-# need sudo su
+# need sudo
 sed -i 's/archive.ubuntu.com/free.nchc.org.tw/g' /etc/apt/sources.list
 apt update
 DEBIAN_FRONTEND=noninteractive apt install -y curl
@@ -17,6 +17,7 @@ DEBIAN_FRONTEND=noninteractive apt install -y gcc
 DEBIAN_FRONTEND=noninteractive apt install -y g++
 DEBIAN_FRONTEND=noninteractive apt install -y python3-pip
 DEBIAN_FRONTEND=noninteractive apt install -y htop
+DEBIAN_FRONTEND=noninteractive apt install -y net-tools
 DEBIAN_FRONTEND=noninteractive apt install -y zsh
 DEBIAN_FRONTEND=noninteractive apt install -y powerline
 DEBIAN_FRONTEND=noninteractive apt install -y fonts-powerline
