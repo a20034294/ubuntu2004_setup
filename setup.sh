@@ -25,7 +25,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt install -y fonts-powerline
 sudo DEBIAN_FRONTEND=noninteractive apt install -y locales
 locale-gen en_US.UTF-8
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
-echo "alias ls='ls -alF --color=always'" >> .zshrc
+echo "alias ls='ls -alFv --color=always'" >> .zshrc
 echo 'export LC_ALL="en_US.UTF-8"' >> .zshrc
 sed -i 's/robbyrussell/agnoster/g' .zshrc
 sed -i 's/git/git mosh/g' .zshrc
