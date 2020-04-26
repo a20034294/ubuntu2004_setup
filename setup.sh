@@ -1,7 +1,7 @@
 # need sudo
 cd ~/
 sudo sed -i 's/tw.archive.ubuntu.com/free.nchc.org.tw/g' /etc/apt/sources.list
-apt update
+sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt install -y curl
 sudo DEBIAN_FRONTEND=noninteractive apt install -y git
 sudo DEBIAN_FRONTEND=noninteractive apt install -y vim
