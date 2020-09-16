@@ -26,10 +26,11 @@ locale-gen en_US.UTF-8
 sudo timedatectl set-timezone 'Asia/Taipei'
 sudo dpkg-reconfigure --frontend noninteractive tzdata
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 echo "alias ls='ls -alFv --color=always'" >> .zshrc
 echo 'export LC_ALL="en_US.UTF-8"' >> .zshrc
 sed -i 's/robbyrussell/agnoster/g' .zshrc
-sed -i 's/git/git mosh/g' .zshrc
+sed -i 's/git/git mosh zsh-autosuggestions/g' .zshrc
 chsh -s /bin/zsh
 source .zshrc
 mkdir .ssh
