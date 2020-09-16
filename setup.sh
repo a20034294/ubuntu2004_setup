@@ -15,7 +15,6 @@ rm .tmux.conf
 wget https://raw.githubusercontent.com/a20034294/tmux/master/.tmux.conf
 tmux source-file .tmux.conf
 sudo DEBIAN_FRONTEND=noninteractive apt install -y mosh
-sudo DEBIAN_FRONTEND=noninteractive apt install -y build-essential
 sudo DEBIAN_FRONTEND=noninteractive apt install -y htop
 sudo DEBIAN_FRONTEND=noninteractive apt install -y net-tools
 sudo DEBIAN_FRONTEND=noninteractive apt install -y zsh
