@@ -1,5 +1,6 @@
 # need sudo
 cd ~/
+sudo sed -E -i 's/http:\/\/.+\/ubuntu/http:\/\/mirror.ccns.ncku.edu.tw\/ubuntu/g' /etc/apt/sources.list
 sed -E -i 's/http:\/\/.+\/ubuntu/http:\/\/mirror.ccns.ncku.edu.tw\/ubuntu/g' /etc/apt/sources.list
 sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt install -y curl
