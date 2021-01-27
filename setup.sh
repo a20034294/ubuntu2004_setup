@@ -15,7 +15,6 @@ sudo DEBIAN_FRONTEND=noninteractive apt install -y tmux
 rm .tmux.conf
 wget https://raw.githubusercontent.com/a20034294/tmux/master/.tmux.conf
 tmux source-file .tmux.conf
-sudo DEBIAN_FRONTEND=noninteractive apt install -y mosh
 sudo DEBIAN_FRONTEND=noninteractive apt install -y htop
 sudo DEBIAN_FRONTEND=noninteractive apt install -y net-tools
 sudo DEBIAN_FRONTEND=noninteractive apt install -y zsh
@@ -31,7 +30,7 @@ echo "alias ls='ls -alFv --color=always'" >> .zshrc
 echo "alias cls='clear'" >> .zshrc
 echo 'export LC_ALL="en_US.UTF-8"' >> .zshrc
 sed -i 's/robbyrussell/agnoster/g' .zshrc
-sed -i 's/git/git mosh zsh-autosuggestions/g' .zshrc
+sed -i 's/git/git zsh-autosuggestions/g' .zshrc
 chsh -s /bin/zsh
 source .zshrc
 mkdir .ssh
