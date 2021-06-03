@@ -11,6 +11,7 @@ rm .vimrc
 wget https://raw.githubusercontent.com/a20034294/vim/master/.vimrc
 vim +PluginInstall +qall
 git config --global core.editor "vim"
+update-alternatives --set editor /usr/bin/vim.basic
 sudo DEBIAN_FRONTEND=noninteractive apt install -y tmux
 rm .tmux.conf
 wget https://raw.githubusercontent.com/a20034294/tmux/master/.tmux.conf
