@@ -1,0 +1,18 @@
+if [ `uname -s` = 'Darwin' ]; then
+    alias ls='ls -alFvG'
+else
+    alias ls='ls -alFv --color=always'
+fi
+alias cls='clear'
+alias update-config='cd ~;\
+                     rm .vimrc;\
+                     wget https://raw.githubusercontent.com/a20034294/vim/master/.vimrc;\
+                     vim +PluginInstall +qall;\
+                     rm .tmux.conf;\
+                     wget https://raw.githubusercontent.com/a20034294/tmux/master/.tmux.conf;\
+                     tmux source-file ~/.tmux.conf;\
+                     rm .alias;\
+                     wget https://raw.githubusercontent.com/a20034294/ubuntu2004_setup/master/.alias;\
+                     source .zshrc;\
+                     if [[ `-` != "~" ]] ; then cd - ; fi;\
+                    '
