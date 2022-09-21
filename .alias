@@ -3,7 +3,16 @@ if [ `uname -s` = 'Darwin' ]; then
 else
     alias ls='ls -alFv --color=always'
 fi
+
 alias cls='clear'
+alias glgga='git log --graph --decorate --all'
+alias glgp='git log --stat -p'
+alias ga='git add'
+alias gaa='git add --all'
+alias gapa='git add --patch'
+alias gc='git commit -v'
+alias gst='git status'
+
 alias update-config='cd ~;\
                      rm .vimrc;\
                      wget https://raw.githubusercontent.com/a20034294/vim/master/.vimrc;\
