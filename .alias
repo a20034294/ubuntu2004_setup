@@ -13,6 +13,12 @@ alias gapa='git add --patch'
 alias gc='git commit -v'
 alias gst='git status'
 
+alias d='docker'
+alias k='kubectl'
+alias kg='kubectl get'
+alias kga='kubectl get all'
+alias kd='kubectl describe'
+
 alias update-config='cd ~;\
                      rm .vimrc;\
                      wget https://raw.githubusercontent.com/a20034294/vim/master/.vimrc;\
