@@ -22,7 +22,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt install -y zsh
 sudo DEBIAN_FRONTEND=noninteractive apt install -y powerline
 sudo DEBIAN_FRONTEND=noninteractive apt install -y fonts-powerline
 sudo DEBIAN_FRONTEND=noninteractive apt install -y locales
-locale-gen en_US.UTF-8
+sudo locale-gen en_US.UTF-8
 sudo timedatectl set-timezone 'Asia/Taipei'
 sudo dpkg-reconfigure --frontend noninteractive tzdata
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
